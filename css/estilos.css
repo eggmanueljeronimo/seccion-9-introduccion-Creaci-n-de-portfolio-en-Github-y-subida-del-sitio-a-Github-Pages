@@ -1,0 +1,154 @@
+.container {
+     max-width: 800px;
+     margin: auto;
+     padding: 20px;
+     background-color: rgb(20, 214, 228);
+     height: 700px;
+     border: 5px solid black;
+     
+}
+
+.row{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 10px;
+}
+
+.column{
+     flex: 1;
+     padding: 10px;
+
+}
+
+body {
+     background-color: rgb(240, 239, 231);
+     color: rgb(226, 15, 15);
+}
+
+h1{ 
+     font-family: "Arial", sans-serif;
+     font-size: 36px;
+     text-align: center;
+}
+
+h2{ 
+     font-family: "Arial";
+     font-size: 36px;
+     text-align: center;
+}
+
+p{
+     font-family: "Georgia";
+     font-size: 18px;
+     padding: 10px;
+     margin: 20px;
+}
+
+@media (max-width: 600px) {
+     .column {
+       flex: 100%;
+     }
+}
+
+/*este es el comienzo de los justificados del menu de la pagina*/
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: rgb(41, 219, 18);
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
+li>a {
+  padding: 8px 24px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  color: rgb(3, 3, 3);
+  text-decoration:none;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .column 
+   {
+      flex: 100%;
+   }
+
+
+  .nav-links  
+   {
+      display: none;
+   }
+
+
+  .button-menu-toggle 
+     {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+     }
+ 
+  .nav-links.nav-links-responsive 
+     {
+      position: absolute;
+      display: flex;
+      background-color: rgba(30, 140, 230, 0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+     }
+}
+
+.img-conteiner{
+  display: flex;
+  justify-content: 500px;
+  width: 300px;
+  height: 200px;
+}
+
+
+.img-conteiner{
+  margin: 0 10px; /* Ajusta el margen según sea necesario */
+}
